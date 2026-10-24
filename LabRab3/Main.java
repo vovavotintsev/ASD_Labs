@@ -1,5 +1,11 @@
 package LabRab3;
 
+/* Задание:
+ * Дано бинарное дерево. 
+ * Найти все вершины с одинаковыми номерами.
+*/
+
+
 public class Main {
 
     public static void main(String[] args) {
