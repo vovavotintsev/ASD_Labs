@@ -3,24 +3,6 @@ package LabRab3;
 public class Main {
 
     public static void main(String[] args) {
-
-        /*
-         * Пример бинарного дерева:
-         *
-         *              10
-         *            /    \
-         *           5      20
-         *          / \    /  \
-         *         3   5  10   7
-         *        /
-         *       20
-         *
-         * Одинаковые номера:
-         * 10 — root и root.right.left
-         * 5  — root.left и root.left.right
-         * 20 — root.right и root.left.left.left
-         */
-
         Node root = new Node(10);
 
         root.left = new Node(5);
@@ -35,6 +17,8 @@ public class Main {
         root.left.left.left = new Node(20);
 
         System.out.println("Вершины с одинаковыми номерами:");
-        TreeSearch.findSameValues(root);
+
+        TreeSearch search = new TreeSearch();
+        search.findSameValues(root);
     }
 }
